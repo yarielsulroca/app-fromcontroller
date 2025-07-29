@@ -23,7 +23,7 @@
     </main>
     
     <footer>
-        <p>&copy; 2024 Mi Sitio Web</p>
+        <p>&copy; 2025 Mi Sitio Web</p>
     </footer>
     
     <?php foreach ($this->getScripts() as $script): ?>

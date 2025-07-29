@@ -22,6 +22,13 @@ class Route
         $routes = [
             'home' => ['controller' => 'HomeController', 'action' => 'index'],
             'about' =>['controller' =>'AboutController','action'=>'index'],
+            'contact' =>['controller' =>'ContactController','action'=>'index'],
+            'products' => ['controller' => 'ProductController', 'action' => 'index'],
+            'product-detaill' =>['controller' =>'ProductController','action'=>'show'],
+            'services' => ['controller' => 'ServiceController', 'action' => 'index'],
+            'blog' =>['controller' =>'BlogController','action'=>'index'],
+            'blog-post' => ['controller' => 'BlogController', 'action' => 'show'],
+            '404' =>['controller' =>'ErrorController','action'=>'notFound'],
         ];
         
         // Verificar si la ruta existe
