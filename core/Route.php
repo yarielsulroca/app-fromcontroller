@@ -22,8 +22,14 @@ class Route
         $routes = [
             'home' => ['controller' => 'HomeController', 'action' => 'index'],
             'about' =>['controller' =>'AboutController','action'=>'index'],
+            'contact' => ['controller' => '', 'action' => ''],
+            'products' => ['controller' => '', 'action' => ''],
+            'product-detail' => ['controller' => '', 'action' => ''],
+            'services' => ['controller' => '', 'action' => ''],
+            'blog' => ['controller' => '', 'action' => ''],
+            '404' => ['controller' => 'errorController', 'action' => '']
         ];
-        
+
         // Verificar si la ruta existe
         if (isset($routes[$route])) {
             $this->handleRoute($routes[$route]);
