@@ -43,7 +43,7 @@ class Route
     {
         $controllerName = $routeConfig['controller'];
         $actionName = $routeConfig['action'];
-        $controller = new $controllerName();
+        $controller = new $controllerName($this->layout);
         $controller->$actionName(); 
     }
 
