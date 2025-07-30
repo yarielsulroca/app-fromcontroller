@@ -15,6 +15,11 @@
         <nav>
             <a href="<?php echo $this->url('home'); ?>" class="<?php echo $this->isActive('home'); ?>">Inicio</a>
             <a href="<?php echo $this->url('about'); ?>" class="<?php echo $this->isActive('about'); ?>">Acerca de</a>
+            <a href="<?php echo $this->url('contact'); ?>" class="<?php echo $this->isActive('contact'); ?>">Contacto</a>
+            <a href="<?php echo $this->url('products'); ?>" class="<?php echo $this->isActive('products'); ?>">Productos</a>
+            <a href="<?php echo $this->url('services'); ?>" class="<?php echo $this->isActive('services'); ?>">Servicios</a>
+            <a href="<?php echo $this->url('blog'); ?>" class="<?php echo $this->isActive('blog'); ?>">Blog</a>
+            <a href="<?php echo $this->url('blog-post'); ?>" class="<?php echo $this->isActive('blog-post'); ?>">Blog Post</a>
         </nav>
     </header>
     
@@ -23,7 +28,7 @@
     </main>
     
     <footer>
-        <p>&copy; 2024 Mi Sitio Web</p>
+        <p>&copy; 2025 EducaciobnIT</p>
     </footer>
     
     <?php foreach ($this->getScripts() as $script): ?>

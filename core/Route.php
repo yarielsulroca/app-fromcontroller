@@ -21,13 +21,14 @@ class Route
         // Mapear rutas a controladores y acciones
         $routes = [
             'home' => ['controller' => 'HomeController', 'action' => 'index'],
-            'about' =>['controller' =>'AboutController','action'=>'index'],
-            'contact' => ['controller' => '', 'action' => ''],
-            'products' => ['controller' => '', 'action' => ''],
-            'product-detail' => ['controller' => '', 'action' => ''],
-            'services' => ['controller' => '', 'action' => ''],
-            'blog' => ['controller' => '', 'action' => ''],
-            '404' => ['controller' => 'errorController', 'action' => '']
+            'about' => ['controller' =>'AboutController','action'=>'index'],
+            'contact' => ['controller' =>'ContactController','action'=>'index'],
+            'products' => ['controller' =>'ProductController','action'=>'index'],
+            'product-detail' => ['controller' =>'ProductController','action'=>'show'],
+            'services' => ['controller' =>'ServiceController','action'=>'index'],
+            'blog' => ['controller' =>'BlogController','action'=>'index'],
+            'blog-post' => ['controller' =>'BlogController','action'=>'show'],
+            '404' => ['controller' =>'ErrorController','action'=>'notFound']
         ];
 
         // Verificar si la ruta existe
