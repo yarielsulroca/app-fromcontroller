@@ -2,6 +2,12 @@
 
 require_once __DIR__ . '/../controllers/HomeController.php';
 require_once __DIR__ . '/../controllers/AboutController.php';
+require_once __DIR__ . '/../controllers/ContactController.php';
+require_once __DIR__ . '/../controllers/ProductController.php';
+require_once __DIR__ . '/../controllers/ServiceController.php';
+require_once __DIR__ . '/../controllers/BlogController.php';
+require_once __DIR__ . '/../controllers/ErrorController.php';
+
 
 class Route
 {
