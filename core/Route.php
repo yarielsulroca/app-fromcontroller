@@ -43,8 +43,8 @@ class Route
     {
         $controllerName = $routeConfig['controller'];
         $actionName = $routeConfig['action'];
-        $controller = new $controllerName();
-        $controller->$actionName(); 
+        $controller = new $controllerName($this->layout);
+        $controller->$actionName();
     }
 
     private function showError($message)
