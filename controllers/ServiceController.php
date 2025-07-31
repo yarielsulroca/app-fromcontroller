@@ -1,6 +1,17 @@
 <?php
 class ServiceController {
+    private $layout;
+
+    
+    public function __construct($layout) {
+        $this->layout = $layout;
+    }
     public function index() {
-        echo "Estoy en el Servicio";
+        $this->layout->setTitle('Servicio');
+        $this->layout->setMetaDescription('Bienvenido a nuestro sitio web. Descubre nuestros servicios y productos.');
+        $this->layout->addStyle('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">');
+        $this->layout->render('service', [
+            'pageTitle' => 'Servicio'
+        ]);
     }
 }
