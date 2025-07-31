@@ -1,1 +1,1 @@
-<h1><?php echo "About"; ?></h1>
+<h1><?php echo "Acerca de"; ?></h1>
