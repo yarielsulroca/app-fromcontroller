@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title><?php echo $this->getTitle(); ?></title>
-  <meta name="description" content="<?php echo $this->getMetaDescription(); ?>">
+    <title><?php echo $this->getTitle(); ?></title>
+    <meta name="description" content="<?php echo $this->getMetaDescription(); ?>">
+
+    <!-- Estilos CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+
   <?php foreach ($this->getStyles() as $style): ?>
       <?php echo $style; ?>
   <?php endforeach; ?>

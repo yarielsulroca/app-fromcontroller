@@ -17,7 +17,24 @@ class HomeController
         $this->layout->render('home', [
             'pageTitle' => 'Bienvenido a Nuestro Sitio',
             'heroTitle' => 'Soluciones Innovadoras',
-          
+            'heroSubtitle' => 'Descubre como podemos ayudartte a alcanzar tus objetivos',
+            'features' => [
+                [
+                    'icon' => 'fas fa-rocket',
+                    'title' => 'Rápido y Eficiente',
+                    'description' => 'Nuestras soluciones están optimizadas para máxima velocidad y eficiencia.'                ],
+                [
+                    'icon' => 'fas fa-shield-alt',
+                    'title' => 'Seguro y Confiable',
+                    'description' => 'Tu seguridad es nuestra prioridad. Implementamos las mejores prácticas'
+                ],
+                [
+                    'icon' => 'fas fa-users',
+                    'title' => 'Soporte 24/7',
+                    'description' => 'Nuestro equipo está disponible para ayudarte en cualquier momento.'
+                ]
+
+            ]
         ]);
     }
 }
