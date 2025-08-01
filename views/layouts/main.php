@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta name="description" content="<?php echo $this->getMetaDescription(); ?>">
- <!-- Estilos CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?php echo $this->getMetaDescription(); ?>">
+    <title><?php echo $this->getTitle(); ?></title>
     
-<!-- Estilos personalizados -->
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/components.css">
+    <!-- Estilos CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
-<title><?php echo $this->getTitle(); ?></title>
-
-  <?php foreach ($this->getStyles() as $style): ?>
-      <?php echo $style; ?>
-  <?php endforeach; ?>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    
+    <!-- Estilos adicionales específicos de la página -->
+    <?php foreach ($this->getStyles() as $style): ?>
+        <?php echo $style; ?>
+    <?php endforeach; ?>
 </head>
 <body>
-    <header>
- <!-- Navegación -->
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="<?php echo $this->url('home'); ?>">
                 <i class="fas fa-home"></i> Mi Sitio Web
@@ -66,19 +68,54 @@
             </div>
         </div>
     </nav>
-<!-- Navegación fin -->  
-    </header>
-    
+
+    <!-- Contenido principal -->
     <main>
         <?php echo $content; ?>
     </main>
-    
-    <footer>
-        <p>&copy; 2025 Mi Sitio Web EducacionIT</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-home"></i> Mi Sitio Web</h5>
+                    <p>Un ejemplo de implementación del patrón Front Controller con sistema de layouts reutilizables.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="<?php echo $this->url('home'); ?>" class="text-light">Inicio</a></li>
+                        <li><a href="<?php echo $this->url('about'); ?>" class="text-light">Acerca de</a></li>
+                        <li><a href="<?php echo $this->url('services'); ?>" class="text-light">Servicios</a></li>
+                        <li><a href="<?php echo $this->url('contact'); ?>" class="text-light">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>
+                        <i class="fas fa-envelope"></i> info@misitioweb.com<br>
+                        <i class="fas fa-phone"></i> +1 234 567 890<br>
+                        <i class="fas fa-map-marker-alt"></i> Ciudad, País
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; <?php echo date('Y'); ?> Mi Sitio Web. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/resource-interceptor.js"></script>
+    <script src="assets/js/error-handler.js"></script>
+    <script src="assets/js/dev-config.js"></script>
     
+    <!-- Scripts adicionales específicos de la página -->
     <?php foreach ($this->getScripts() as $script): ?>
         <?php echo $script; ?>
     <?php endforeach; ?>
 </body>
-</html>
+</html> 

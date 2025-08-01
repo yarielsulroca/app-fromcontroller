@@ -1,0 +1,219 @@
+/* main.css - Estilos principales del Front Controller */
+
+/* Estilos de la barra de navegación */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link.active {
+    background-color: #007bff !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+/* Estilos de la sección hero */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+/* Estilos de las tarjetas */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos de botones */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+/* Estilos adicionales para mejorar la experiencia */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.animate-on-scroll.animate__fadeInUp {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para formularios */
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Estilos para badges */
+.badge {
+    font-size: 0.8em;
+}
+
+/* Estilos para iconos */
+.fa-3x, .fa-4x, .fa-5x, .fa-6x {
+    margin-bottom: 1rem;
+}
+
+/* Estilos para testimonios */
+.testimonial-card {
+    border-left: 4px solid #667eea;
+    background: #f8f9fa;
+}
+
+/* Estilos para servicios */
+.service-card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para productos */
+.product-card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para blog */
+.blog-card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para navegación */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para secciones */
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 3rem;
+}
+
+/* Estilos para botones de acción */
+.btn-cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5a6fd8;
+    text-decoration: underline;
+}
+
+/* Estilos para texto */
+.text-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Estilos para responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+/* Estilos para animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Estilos para loading */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para mensajes de éxito */
+.success-message {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+} 
