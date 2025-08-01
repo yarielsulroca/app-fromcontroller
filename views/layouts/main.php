@@ -20,15 +20,54 @@
 <body>
     <header>
        <h1>Plantilla Madre hereda</h1>
-       <nav>
-        <a href="<?php echo $this->url('home'); ?>" class="<?php echo $this->isActive('home'); ?>">Inicio</a>
-        <a href="<?php echo $this->url('about'); ?>" class="<?php echo $this->isActive('about'); ?>">Acerca de</a>
-        <a href="<?php echo $this->url('contact'); ?>" class="<?php echo $this->isActive('contact'); ?>">Contacto</a>
-        <a href="<?php echo $this->url('products'); ?>" class="<?php echo $this->isActive('products'); ?>">Productos</a>
-        <a href="<?php echo $this->url('services'); ?>" class="<?php echo $this->isActive('services'); ?>">Servicios</a>
-        <a href="<?php echo $this->url('blog'); ?>" class="<?php echo $this->isActive('blog'); ?>">Blog</a>
-        <a href="<?php echo $this->url('blog-post'); ?>" class="<?php echo $this->isActive('blog-post'); ?>">Blog Post</a>
-       </nav>
+        <!-- Navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="<?php echo $this->url('home'); ?>">
+                    <i class="fas fa-home"></i> Mi Sitio Web
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link <?php echo $this->isActive('home'); ?>" href="<?php echo $this->url('home'); ?>">
+                                <i class="fas fa-home"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php echo $this->isActive('about'); ?>" href="<?php echo $this->url('about'); ?>">
+                                <i class="fas fa-info-circle"></i> Acerca de
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php echo $this->isActive('services'); ?>" href="<?php echo $this->url('services'); ?>">
+                                <i class="fas fa-cogs"></i> Servicios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php echo $this->isActive('products'); ?>" href="<?php echo $this->url('products'); ?>">
+                                <i class="fas fa-shopping-cart"></i> Productos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php echo $this->isActive('blog'); ?>" href="<?php echo $this->url('blog'); ?>">
+                                <i class="fas fa-blog"></i> Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php echo $this->isActive('contact'); ?>" href="<?php echo $this->url('contact'); ?>">
+                                <i class="fas fa-envelope"></i> Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navegación fin -->  
     </header>
     
     <main>
