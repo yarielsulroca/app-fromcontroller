@@ -1,12 +1,14 @@
 <?php
-class HomeController
-{
+// HomeController: Controlador principal para las páginas básicas del sitio
+
+class HomeController {
     private $layout;
     
     public function __construct($layout) {
         $this->layout = $layout;
     }
     
+    // Página de inicio
     public function index() {
         $this->layout->setTitle('Inicio - Mi Sitio Web');
         $this->layout->setMetaDescription('Bienvenido a nuestro sitio web. Descubre nuestros servicios y productos.');
@@ -37,7 +39,48 @@ class HomeController
             ]
         ]);
     }
+    
+    // Página Acerca de
+    public function about() {
+        $this->layout->setTitle('Acerca de - Mi Sitio Web');
+        $this->layout->setMetaDescription('Conoce más sobre nuestra empresa, misión, visión y valores.');
+        
+        $this->layout->render('about', [
+            'pageTitle' => 'Acerca de Nosotros',
+            'companyInfo' => [
+                'name' => 'Mi Empresa S.A.',
+                'founded' => '2020',
+                'employees' => '50+',
+                'clients' => '200+'
+            ],
+            'mission' => 'Proporcionar soluciones tecnológicas innovadoras que impulsen el crecimiento de nuestros clientes.',
+            'vision' => 'Ser líderes en el desarrollo de soluciones digitales que transformen la manera de hacer negocios.',
+            'values' => [
+                'Innovación',
+                'Calidad',
+                'Integridad',
+                'Colaboración',
+                'Excelencia'
+            ]
+        ]);
     }
-   
-
-?>
+    
+    // Página de Contacto
+    public function contact() {
+        $this->layout->setTitle('Contacto - Mi Sitio Web');
+        $this->layout->setMetaDescription('Contáctanos para obtener más información sobre nuestros servicios.');
+        
+        // Agregar script específico para validación del formulario de contacto
+        $this->layout->addScript('<script src="assets/js/contact.js"></script>');
+        
+        $this->layout->render('contact', [
+            'pageTitle' => 'Contáctanos',
+            'contactInfo' => [
+                'email' => 'info@misitioweb.com',
+                'phone' => '+1 234 567 890',
+                'address' => 'Calle Principal 123, Ciudad, País',
+                'hours' => 'Lunes a Viernes: 9:00 AM - 6:00 PM'
+            ]
+        ]);
+    }
+} 

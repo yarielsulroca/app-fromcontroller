@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegación - Front Controller</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-item { margin: 15px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; background: white; }
+        .nav-item a { color: #0066cc; text-decoration: none; font-weight: bold; font-size: 16px; }
+        .nav-item a:hover { text-decoration: underline; }
+        .description { color: #666; font-size: 14px; margin-top: 8px; }
+        .url-example { background: #f0f0f0; padding: 8px; border-radius: 3px; font-family: monospace; font-size: 12px; margin: 5px 0; }
+        h1 { color: #333; text-align: center; }
+        h2 { color: #0066cc; }
+        .highlight { background: #fff3cd; padding: 15px; border-radius: 5px; border-left: 4px solid #ffc107; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧭 Navegación del Front Controller</h1>
+        <p style="text-align: center; color: #666;">Prueba las diferentes rutas del sistema</p>
+
+        <div class="highlight">
+            <h3>📋 Instrucciones:</h3>
+            <p>Haz clic en los enlaces para probar las diferentes funcionalidades del Front Controller con sistema de layouts.</p>
+        </div>
+
+        <div class="section">
+            <h2>📄 Páginas Principales</h2>
+            
+            <div class="nav-item">
+                <a href="index.php?route=home">🏠 Página de Inicio</a>
+                <div class="description">Muestra la página principal con hero section y características</div>
+                <div class="url-example">URL: index.php?route=home</div>
+            </div>
+            
+            <div class="nav-item">
+                <a href="index.php?route=about">ℹ️ Acerca de</a>
+                <div class="description">Muestra información de la empresa, misión y valores</div>
+                <div class="url-example">URL: index.php?route=about</div>
+            </div>
+            
+            <div class="nav-item">
+                <a href="index.php?route=contact">📞 Contacto</a>
+                <div class="description">Muestra formulario de contacto e información de la empresa</div>
+                <div class="url-example">URL: index.php?route=contact</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>❌ Páginas de Error</h2>
+            
+            <div class="nav-item">
+                <a href="index.php?route=404">🚫 Error 404</a>
+                <div class="description">Página de error 404 (página no encontrada)</div>
+                <div class="url-example">URL: index.php?route=404</div>
+            </div>
+            
+            <div class="nav-item">
+                <a href="index.php?route=inexistente">🔍 Ruta Inexistente</a>
+                <div class="description">Prueba una ruta que no existe (debería mostrar error 404)</div>
+                <div class="url-example">URL: index.php?route=inexistente</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔧 Páginas Implementadas</h2>
+            
+            <div class="nav-item">
+                <a href="index.php?route=services">⚙️ Servicios</a>
+                <div class="description">Página de servicios con catálogo completo y testimonios</div>
+                <div class="url-example">URL: index.php?route=services</div>
+            </div>
+            
+            <div class="nav-item">
+                <a href="index.php?route=products">🛒 Productos</a>
+                <div class="description">Página de productos con precios y características</div>
+                <div class="url-example">URL: index.php?route=products</div>
+            </div>
+            
+            <div class="nav-item">
+                <a href="index.php?route=blog">📝 Blog</a>
+                <div class="description">Página del blog con artículos y categorías</div>
+                <div class="url-example">URL: index.php?route=blog</div>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <h3>💡 ¿Qué deberías ver?</h3>
+            <ul>
+                <li><strong>Páginas normales:</strong> Contenido completo con navegación y footer</li>
+                <li><strong>Error 404:</strong> Página de error personalizada con variables correctas</li>
+                <li><strong>Rutas inexistentes:</strong> Deberían mostrar error 404 automáticamente</li>
+                <li><strong>Sin errores de JavaScript:</strong> No deberían aparecer errores en la consola</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; padding: 20px; background: #e9ecef; border-radius: 5px;">
+            <p><strong>🔍 Debug:</strong> Si ves warnings de variables no definidas, significa que hay un problema en el sistema de layouts.</p>
+        </div>
+    </div>
+</body>
+</html> 
