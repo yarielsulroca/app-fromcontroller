@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>ComercioIT | Tu E-Shop en PHP</title>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?php echo $this->getMetaDescription(); ?>">
+    <title><?php echo $this->getTitle(); ?></title>
+	<title></title>
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<!--theme-style-->
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />	
 	<!--//theme-style-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!--fonts-->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<!--//fonts-->
-	<script src="js/jquery.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
 	<!--script-->
 	</head>
 	<body> 
@@ -31,11 +35,11 @@
 							<a href="ingreso.html"><span></span> TU CUENTA</a>
 						</div-->
 						<ul class="login">
-							<li><a href="ingreso.php"><span></span> INGRESAR</a></li>
+							<li><a href="<?php echo $this->url('ingreso'); ?>"><span></span> INGRESAR</a></li>
 							&nbsp;|&nbsp;
 							<li><a href="registro.php">REGISTRARME</a></li>
 							&nbsp;|&nbsp;
-							<li><a href="contacto.php">CONTACTO</a></li>
+							<li><a href="<?php echo $this->url('contacto'); ?>">CONTACTO</a></li>
 						</ul>
 						<!--div class="cart"><a href="#"><span></span>CART</a></div-->
 						<div class="clearfix"></div>
@@ -45,33 +49,11 @@
 			</div>
 		</div>
 		<!---->
+        <!-- Contenido principal -->
 		<div class="container">
-			<section id="page">
-				<div class="account_grid">
-	<div class="login-right">
-		<h3>INGRESO DE USUARIO</h3>
-		<form action="#" method="post">
-		<div>
-			<span>E-Mail:</span>
-			<input type="text" name="email"> 
-		</div>
-		<div>
-			<span>Contraseña:</span>
-			<input type="password" name="pass"> 
-		</div>
-			<input type="submit" value="Ingresar">
-			<br>
-			<a class="forgot" href="#">¿Olvidaste tu contraseña?</a>
-		</form>
-	</div>	
-	<div class=" login-left">
-		<h3>¿NUEVO USUARIO?</h3>
-		<a class="acount-btn" href="registro.php">Crear una cuenta</a>
-	</div>
-	<div class="clearfix"></div>
-</div>
-			</section>
-			<div class="clearfix"></div>
+            <section id="page">
+                <?php echo $content; ?>
+            </section>
 		</div>
 
 		<!---->
@@ -85,8 +67,8 @@
 					<div class="latter-right">
 						<p>SEGUINOS</p>
 						<ul class="face-in-to">
-							<li><a href="#"><span></span></a></li>
-							<li><a href="#"><span class="facebook-in"></span></a></li>
+							<li><a href="http://www.twitter.com/educacionit"><span></span></a></li>
+							<li><a href="http://www.facebook.com/educacionIT"><span class="facebook-in"></span></a></li>
 							<div class="clearfix"></div>
 						</ul>
 						<div class="clearfix"></div>
