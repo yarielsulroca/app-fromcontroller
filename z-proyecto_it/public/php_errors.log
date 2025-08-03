@@ -1,0 +1,10 @@
+[03-Aug-2025 17:24:37 Europe/Berlin] PHP Warning:  Undefined variable $assetImage in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 23
+[03-Aug-2025 17:24:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php:23
+Stack trace:
+#0 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\core\Layout.php(26): include()
+#1 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\core\Layout.php(14): Layout->includeView('producto', Array)
+#2 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\controllers\ProductoController.php(56): Layout->render('producto', Array)
+#3 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\core\Router.php(43): ProductoController->detalle()
+#4 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\public\index.php(13): Router->handleRequest()
+#5 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 23
