@@ -1,4 +1,5 @@
-<?
+<?php
+// Template 'madre' que van a utilizar varios controladores
 
 class Layout{
     private $title = 'Workshop IT';
@@ -14,6 +15,7 @@ class Layout{
         $content = ob_get_clean();
         $this->renderLayout($content, $data);
     }
+
     public function includeView($view, $data = []) {
         $viewFile = __DIR__ . '/../views/' . $view . '.php';
 

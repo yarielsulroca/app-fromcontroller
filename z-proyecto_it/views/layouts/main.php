@@ -12,10 +12,19 @@
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/components.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!--theme-style-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!--//theme-style-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+	<script src="../js/jquery.min.js"></script>
 
-  <?php foreach ($this->getStyles() as $style): ?>
+    <?php foreach ($this->getStyles() as $style): ?>
       <?php echo $style; ?>
-  <?php endforeach; ?>
+    <?php endforeach; ?>
 </head>
 <body>
     <header>
@@ -31,31 +40,28 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link <?php echo $this->isActive('home'); ?>" href="<?php echo $this->url('home'); ?>">
-                                <i class="fas fa-home"></i> Inicio
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link <?php echo $this->isActive('ingreso'); ?>" href="<?php echo $this->url('ingreso'); ?>">
-                                <i class="fas fa-info-circle"></i> INGRESAR
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link <?php echo $this->isActive('registro'); ?>" href="<?php echo $this->url('registro'); ?>">
-                                <i class="fas fa-cogs"></i> REGISTRARME
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link <?php echo $this->isActive('contact'); ?>" href="<?php echo $this->url('contact'); ?>">
-                                <i class="fas fa-shopping-cart"></i> CONTACTO
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $this->isActive('home'); ?>" href="<?php echo $this->url('home'); ?>">
+                            <i class="fas fa-home"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $this->isActive('ingreso'); ?>" href="<?php echo $this->url('ingreso'); ?>">
+                            <i class="fas fa-info-circle"></i> INGRESAR
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $this->isActive('registro'); ?>" href="<?php echo $this->url('registro'); ?>">
+                            <i class="fas fa-cogs"></i> REGISTRARME
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $this->isActive('contact'); ?>" href="<?php echo $this->url('contact'); ?>">
+                            <i class="fas fa-shopping-cart"></i> CONTACTO
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <!-- Navegación fin -->
@@ -212,7 +218,7 @@
 			</div>
 		</div>	
 		<!--initiate accordion-->
-		<script src="js/custom.js"></script>
+		<script src="/js/custom.js"></script>
 
     <?php foreach ($this->getScripts() as $script): ?>
         <?php echo $script; ?>
