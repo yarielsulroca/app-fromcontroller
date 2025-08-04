@@ -1,0 +1,1 @@
+<h1><?php echo "404 Not Found"; ?></h1>

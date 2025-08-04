@@ -2,12 +2,28 @@
 class ProductController
 {
     
+private $layout;
+    
+    public function __construct($layout) {
+        $this->layout = $layout;
+    }
+    
     public function index(){
-       echo "Estoy en Producto";
+        $this->layout->setTitle('Producto - Mi Sitio Web');
+        $this->layout->setMetaDescription('Bienvenido a nuestro sitio web. Descubre nuestros servicios y productos.');
+        $this->layout->addStyle('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">');
+        $this->layout->render('product', [
+            'pageTitle' => 'Producto'       
+        ]);
     }
 
      public function show(){
-       echo "Estoy en el detalle de Producto";
+      $this->layout->setTitle('Producto detalle - Mi Sitio Web');
+      $this->layout->setMetaDescription('Bienvenido a nuestro sitio web. Descubre nuestros servicios y productos.');
+      $this->layout->addStyle('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">');
+      $this->layout->render('product-detaill', [
+         'pageTitle' => 'Producto detallado'
+      ]);
     }
    
 }
