@@ -28,7 +28,6 @@
 </head>
 <body>
     <header>
-       <h1>Plantilla Madre hereda</h1>
         <!-- Navegación -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
