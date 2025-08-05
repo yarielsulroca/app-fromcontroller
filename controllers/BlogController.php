@@ -1,38 +1,116 @@
 <?php
-class BlogController
-{
-    
-   private $layout;
-    
+// BlogController: Controlador para gestionar el blog
+// Demuestra el uso del patrón Front Controller con sistema de layouts
+
+class BlogController {
+    private $layout;
+
     public function __construct($layout) {
         $this->layout = $layout;
     }
-    
-    public function index(){
+
+    public function index() {
         $this->layout->setTitle('Blog - Mi Sitio Web');
-        $this->layout->setMetaDescription('Bienvenido a nuestro sitio web. Descubre nuestros servicios y productos.');
-        $this->layout->addStyle('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">');
-        //$this->layout->addScript('<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>');
-
-
+        $this->layout->setMetaDescription('Artículos y noticias sobre tecnología, desarrollo web y tendencias del sector.');
+        
         $this->layout->render('blog', [
-            'pageTitle' => 'Bienvenido a Nuestro Sitio',
-            'heroTitle' => 'Soluciones Innovadoras',
-          
+            'pageTitle' => 'Nuestro Blog',
+            'heroTitle' => 'Blog Tecnológico',
+            'heroSubtitle' => 'Artículos, tutoriales y noticias del mundo tech',
+            'posts' => [
+                [
+                    'id' => 1,
+                    'title' => 'Introducción al Patrón Front Controller',
+                    'excerpt' => 'Descubre cómo implementar el patrón Front Controller en PHP para crear aplicaciones web más organizadas y mantenibles.',
+                    'author' => 'Equipo de Desarrollo',
+                    'date' => '2024-01-15',
+                    'category' => 'Arquitectura',
+                    'tags' => ['PHP', 'Patrones', 'Front Controller'],
+                    'image' => 'fas fa-code'
+                ],
+                [
+                    'id' => 2,
+                    'title' => 'Mejores Prácticas en Desarrollo Web',
+                    'excerpt' => 'Conoce las mejores prácticas para crear sitios web modernos, rápidos y accesibles.',
+                    'author' => 'María González',
+                    'date' => '2024-01-10',
+                    'category' => 'Desarrollo Web',
+                    'tags' => ['HTML5', 'CSS3', 'JavaScript', 'Accesibilidad'],
+                    'image' => 'fas fa-laptop-code'
+                ],
+                [
+                    'id' => 3,
+                    'title' => 'Optimización de Bases de Datos',
+                    'excerpt' => 'Técnicas avanzadas para optimizar el rendimiento de tus bases de datos MySQL.',
+                    'author' => 'Carlos Rodríguez',
+                    'date' => '2024-01-05',
+                    'category' => 'Bases de Datos',
+                    'tags' => ['MySQL', 'Optimización', 'Performance'],
+                    'image' => 'fas fa-database'
+                ],
+                [
+                    'id' => 4,
+                    'title' => 'Seguridad en Aplicaciones Web',
+                    'excerpt' => 'Guía completa para proteger tus aplicaciones web contra vulnerabilidades comunes.',
+                    'author' => 'Ana Martínez',
+                    'date' => '2023-12-28',
+                    'category' => 'Seguridad',
+                    'tags' => ['Seguridad', 'OWASP', 'Vulnerabilidades'],
+                    'image' => 'fas fa-shield-alt'
+                ],
+                [
+                    'id' => 5,
+                    'title' => 'Introducción a APIs REST',
+                    'excerpt' => 'Aprende a diseñar e implementar APIs RESTful efectivas para tus aplicaciones.',
+                    'author' => 'Luis Pérez',
+                    'date' => '2023-12-20',
+                    'category' => 'APIs',
+                    'tags' => ['REST', 'API', 'JSON', 'HTTP'],
+                    'image' => 'fas fa-cloud'
+                ],
+                [
+                    'id' => 6,
+                    'title' => 'Desarrollo de Aplicaciones Móviles',
+                    'excerpt' => 'Comparativa entre desarrollo nativo y multiplataforma para aplicaciones móviles.',
+                    'author' => 'Sofía López',
+                    'date' => '2023-12-15',
+                    'category' => 'Móvil',
+                    'tags' => ['React Native', 'Flutter', 'iOS', 'Android'],
+                    'image' => 'fas fa-mobile-alt'
+                ]
+            ],
+            'categories' => [
+                'Arquitectura' => 1,
+                'Desarrollo Web' => 1,
+                'Bases de Datos' => 1,
+                'Seguridad' => 1,
+                'APIs' => 1,
+                'Móvil' => 1
+            ]
         ]);
     }
 
-     public function show(){
-      $this->layout->setTitle('Blog Post - Mi Sitio Web');
-      $this->layout->setMetaDescription('Bienvenido a nuestro sitio web. Descubre nuestros servicios y productos.');
-      $this->layout->addStyle('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">');
-        //$this->layout->addScript('<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>');
+    public function post($id = null) {
+        if (!$id) {
+            header('Location: ?route=blog');
+            exit;
+        }
 
-      $this->layout->render('blog-post', [
-         'pageTitle' => 'Bienvenido a Nuestro Sitio',
-         'heroTitle' => 'Soluciones Innovadoras',
-         
-      ]);
+        $this->layout->setTitle('Artículo del Blog - Mi Sitio Web');
+        $this->layout->setMetaDescription('Artículo detallado sobre tecnología y desarrollo web.');
+        
+        $this->layout->render('blog/post', [
+            'postId' => $id,
+            'pageTitle' => 'Artículo del Blog',
+            'post' => [
+                'id' => $id,
+                'title' => 'Artículo ' . $id,
+                'content' => 'Contenido detallado del artículo...',
+                'author' => 'Autor',
+                'date' => '2024-01-01',
+                'category' => 'Categoría',
+                'tags' => ['Tag1', 'Tag2']
+            ]
+        ]);
     }
-   
-}
+} 
