@@ -1,0 +1,266 @@
+# 🏗️ Arquitectura en Capas - Guía de Implementación
+
+## 📋 Resumen del Proyecto
+Este proyecto implementa una **arquitectura en capas** en PHP con separación clara de responsabilidades, conexión a MySQL y patrones de diseño modernos.
+
+## 🎯 Características Principales
+- ✅ **Arquitectura en Capas** - Separación clara de responsabilidades
+- ✅ **Conexión MySQL** - Base de datos con timestamps y soft delete
+- ✅ **Patrón Singleton** - Para conexión de base de datos
+- ✅ **Modelos CRUD** - Operaciones básicas y avanzadas
+- ✅ **Sistema de Layouts** - Plantillas reutilizables
+- ✅ **Front Controller** - Punto de entrada único
+
+---
+
+## 📁 Estructura del Proyecto
+
+```
+app2/
+├── config/                 # Capa de Configuración
+│   ├── database.php       # Configuración MySQL (root sin password)
+│   └── app.php           # Configuración general de la aplicación
+├── core/                  # Núcleo del Sistema
+│   ├── Router.php         # Manejador de rutas
+│   ├── Layout.php         # Sistema de layouts
+│   └── Database.php       # Conexión MySQL (Singleton)
+├── models/               # Capa de Modelos (Entidades)
+│   ├── BaseModel.php     # Modelo base con CRUD y timestamps
+│   ├── User.php          # Gestión de usuarios
+│   ├── Product.php       # Gestión de productos
+│   ├── Service.php       # Gestión de servicios
+│   └── BlogPost.php      # Gestión de posts del blog
+├── controllers/          # Capa de Controladores
+│   ├── HomeController.php
+│   ├── UserController.php
+│   ├── ProductController.php
+│   ├── ServiceController.php
+│   ├── BlogController.php
+│   └── ErrorController.php
+├── views/               # Capa de Vistas
+│   ├── layouts/
+│   │   └── main.php
+│   ├── home.php         # Página de inicio
+│   ├── about.php        # Página "Acerca de"
+│   ├── contact.php      # Página de contacto
+│   ├── services.php     # Lista de servicios (público)
+│   ├── products.php     # Lista de productos (público)
+│   ├── blog.php         # Lista de posts (público)
+│   ├── services/        # Vistas de servicios
+│   │   └── detail.php   # Detalle de servicio (público)
+│   ├── products/        # Vistas de productos
+│   │   └── detail.php   # Detalle de producto (público)
+│   ├── blog/            # Vistas de blog
+│   │   └── post.php     # Detalle de post (público)
+│   └── admin/           # Panel de administración
+│       ├── users/       # Gestión de usuarios
+│       │   ├── index.php
+│       │   ├── create.php
+│       │   └── edit.php
+│       ├── products/    # Gestión de productos
+│       │   ├── index.php
+│       │   ├── create.php
+│       │   └── edit.php
+│       ├── services/    # Gestión de servicios
+│       │   ├── index.php
+│       │   ├── create.php
+│       │   └── edit.php
+│       └── blog/        # Gestión de blog
+│           ├── index.php
+│           ├── create.php
+│           └── edit.php
+├── public/              # Capa de Presentación
+│   ├── index.php        # Front Controller
+│   ├── assets/
+│   │   ├── css/
+│   │   └── js/
+│   └── uploads/
+└── database/            # Scripts de Base de Datos
+    ├── schema.sql       # Estructura de tablas
+    └── seed.sql         # Datos de prueba
+```
+
+---
+
+## 🎯 Componentes por Capa
+
+### **1. Capa de Configuración**
+- **database.php**: Configuración MySQL (host, database, username, password)
+- **app.php**: Configuración general (nombre, versión, debug, timezone)
+
+### **2. Capa de Base de Datos**
+- **Database.php**: Clase singleton para conexión MySQL
+- **BaseModel.php**: Modelo base con métodos CRUD comunes y timestamps
+
+### **3. Capa de Modelos (Entidades)**
+- **User.php**: Gestión de usuarios (autenticación, roles, encriptación)
+- **Product.php**: Gestión de productos (catálogo, stock, categorías)
+- **Service.php**: Gestión de servicios (duración, precios, categorías)
+- **BlogPost.php**: Gestión de posts (estados, autores, búsquedas)
+
+### **4. Capa de Controladores**
+- Integración con modelos
+- Validación de datos
+- Manejo de errores mejorado
+- Lógica de negocio
+
+#### **Controladores de Páginas (Públicas):**
+- **HomeController.php**: Dashboard principal con estadísticas dinámicas
+- **AboutController.php**: Página "Acerca de" con información de la empresa
+- **ContactController.php**: Página de contacto con formulario y validación
+
+#### **Controladores de Gestión (Admin):**
+- **UserController.php**: CRUD completo de usuarios (crear, editar, eliminar)
+- **ProductController.php**: CRUD completo de productos (catálogo, stock)
+- **ServiceController.php**: CRUD completo de servicios (duración, precios)
+- **BlogController.php**: CRUD completo de posts (estados, autores)
+
+#### **Controladores de Sistema:**
+- **ErrorController.php**: Manejo de errores 404, 500 y otros
+
+
+### **5. Capa de Vistas**
+- **Vistas Públicas**: home.php, about.php, contact.php, services.php, products.php, blog.php
+- **Vistas de Detalle**: services/detail.php, products/detail.php, blog/post.php
+- **Vistas de Administración**: admin/users/, admin/products/, admin/services/, admin/blog/
+- **Formularios**: create.php, edit.php con validación
+- **Listados**: index.php con paginación y filtros
+- **Templates**: layouts/main.php reutilizable
+
+---
+
+## 🚀 Plan de Implementación Paso a Paso
+
+### **FASE 1: Configuración y Base de Datos**
+```
+Paso 1.1: Crear directorio config/
+Paso 1.2: Crear config/database.php
+Paso 1.3: Crear config/app.php
+Paso 1.4: Crear directorio database/
+Paso 1.5: Crear database/schema.sql
+Paso 1.6: Crear database/seed.sql
+Paso 1.7: Crear core/Database.php
+Paso 1.8: Ejecutar scripts SQL
+Paso 1.9: Probar conexión (test_db.php)
+```
+
+### **FASE 2: Capa de Modelos**
+```
+Paso 2.1: Crear directorio models/
+Paso 2.2: Crear models/BaseModel.php
+Paso 2.3: Crear models/User.php
+Paso 2.4: Crear models/Product.php
+Paso 2.5: Crear models/Service.php
+Paso 2.6: Crear models/BlogPost.php
+Paso 2.7: Probar modelos (test_models.php)
+```
+
+### **FASE 3: Mejorar Controladores**
+```
+Paso 3.1: Actualizar HomeController.php
+Paso 3.2: Crear UserController.php
+Paso 3.3: Actualizar ProductController.php
+Paso 3.4: Actualizar ServiceController.php
+Paso 3.5: Actualizar BlogController.php
+Paso 3.6: Probar controladores
+```
+
+### **FASE 4: Mejorar Vistas**
+```
+Paso 4.1: Crear formularios dinámicos
+Paso 4.2: Implementar listados con datos reales
+Paso 4.3: Añadir paginación
+Paso 4.4: Validación en frontend
+Paso 4.5: Probar vistas
+```
+
+### **FASE 5: Sistema de Autenticación**
+```
+Paso 5.1: Crear AuthController (login, register, logout)
+Paso 5.2: Crear vistas de autenticación (login.php, register.php)
+Paso 5.3: Implementar manejo de sesiones
+Paso 5.4: Actualizar Router con autenticación real
+Paso 5.5: Crear middleware de autenticación
+Paso 5.6: Proteger rutas admin
+```
+
+---
+
+## 🔧 Comandos de Verificación
+
+### **Después de cada fase:**
+```bash
+# Verificar estructura
+tree app2/
+
+# Verificar sintaxis PHP
+php -l core/Database.php
+php -l models/BaseModel.php
+
+# Probar conexión
+php test_db.php
+
+# Probar modelos
+php test_models.php
+```
+
+---
+
+## 🎯 Puntos de Control
+
+### **Después de FASE 1:**
+- ✅ Conexión a MySQL funcionando
+- ✅ Tablas creadas con timestamps
+- ✅ Datos de prueba insertados
+
+### **Después de FASE 2:**
+- ✅ Todos los modelos funcionando
+- ✅ CRUD básico operativo
+- ✅ Soft delete implementado
+
+### **Después de FASE 3:**
+- ✅ Controladores integrados con modelos
+- ✅ Validación de datos
+- ✅ Manejo de errores
+
+### **Después de FASE 4:**
+- ✅ Vistas dinámicas
+- ✅ Formularios funcionales
+- ✅ Paginación operativa
+
+### **Después de FASE 5:**
+- ✅ Sistema de login/register funcionando
+- ✅ Sesiones implementadas
+- ✅ Rutas admin protegidas
+- ✅ Middleware de autenticación activo
+
+---
+
+## 🚨 Errores Comunes y Soluciones
+
+### **Error: "Class not found"**
+- Verificar que el archivo del modelo existe
+- Verificar que la clase tiene el nombre correcto
+- Verificar que el require_once está correcto
+
+### **Error: "Database connection failed"**
+- Verificar configuración en config/database.php
+- Verificar que MySQL está corriendo
+- Verificar credenciales de acceso
+
+### **Error: "Table doesn't exist"**
+- Ejecutar database/schema.sql
+- Verificar nombre de la base de datos
+- Verificar que las tablas se crearon correctamente
+
+---
+
+## 📚 Recursos Adicionales
+
+- **Arquitectura en Capas**: [Wikipedia](https://en.wikipedia.org/wiki/Multitier_architecture)
+- **Patrón Singleton**: [Wikipedia](https://en.wikipedia.org/wiki/Singleton_pattern)
+- **PHP PDO**: [PHP Documentation](https://www.php.net/manual/en/book.pdo.php)
+
+---
+
+*Esta guía permite construir el proyecto paso a paso, verificando cada fase antes de continuar con la siguiente.*
