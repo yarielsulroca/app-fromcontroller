@@ -1,5 +1,5 @@
 -- Insertar datos de prueba
-USE cursoit;
+USE extructura_capas_it;
 
 -- Usuario administrador
 INSERT IGNORE INTO users (name, email, password, role) VALUES 
