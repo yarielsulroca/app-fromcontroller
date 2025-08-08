@@ -8,3 +8,33 @@ Stack trace:
 #4 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\public\index.php(13): Router->handleRequest()
 #5 {main}
   thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 23
+[08-Aug-2025 02:28:42 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 22
+[08-Aug-2025 02:28:42 Europe/Berlin] PHP Warning:  Undefined array key "imagen" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 24
+[08-Aug-2025 02:28:42 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 27
+[08-Aug-2025 02:28:42 Europe/Berlin] PHP Warning:  Undefined array key "nombre" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 27
+[08-Aug-2025 02:28:42 Europe/Berlin] PHP Warning:  Undefined array key "descrip" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 28
+[08-Aug-2025 02:28:42 Europe/Berlin] PHP Warning:  Undefined array key "precio" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 29
+[08-Aug-2025 02:31:07 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 22
+[08-Aug-2025 02:31:07 Europe/Berlin] PHP Warning:  Undefined array key "imagen" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 24
+[08-Aug-2025 02:31:07 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 27
+[08-Aug-2025 02:31:07 Europe/Berlin] PHP Warning:  Undefined array key "nombre" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 27
+[08-Aug-2025 02:31:07 Europe/Berlin] PHP Warning:  Undefined array key "descrip" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 28
+[08-Aug-2025 02:31:07 Europe/Berlin] PHP Warning:  Undefined array key "precio" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 29
+[08-Aug-2025 02:32:17 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 23
+[08-Aug-2025 02:32:17 Europe/Berlin] PHP Warning:  Undefined array key "imagen" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 25
+[08-Aug-2025 02:32:17 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 28
+[08-Aug-2025 02:32:17 Europe/Berlin] PHP Warning:  Undefined array key "nombre" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 28
+[08-Aug-2025 02:32:17 Europe/Berlin] PHP Warning:  Undefined array key "descrip" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 29
+[08-Aug-2025 02:32:17 Europe/Berlin] PHP Warning:  Undefined array key "precio" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 30
+[08-Aug-2025 02:32:33 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 23
+[08-Aug-2025 02:32:33 Europe/Berlin] PHP Warning:  Undefined array key "imagen" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 25
+[08-Aug-2025 02:32:33 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 28
+[08-Aug-2025 02:32:33 Europe/Berlin] PHP Warning:  Undefined array key "nombre" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 28
+[08-Aug-2025 02:32:33 Europe/Berlin] PHP Warning:  Undefined array key "descrip" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 29
+[08-Aug-2025 02:32:33 Europe/Berlin] PHP Warning:  Undefined array key "precio" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 30
+[08-Aug-2025 02:37:23 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 22
+[08-Aug-2025 02:37:23 Europe/Berlin] PHP Warning:  Undefined array key "imagen" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 24
+[08-Aug-2025 02:37:23 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 27
+[08-Aug-2025 02:37:23 Europe/Berlin] PHP Warning:  Undefined array key "nombre" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 27
+[08-Aug-2025 02:37:23 Europe/Berlin] PHP Warning:  Undefined array key "descrip" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 28
+[08-Aug-2025 02:37:23 Europe/Berlin] PHP Warning:  Undefined array key "precio" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 29

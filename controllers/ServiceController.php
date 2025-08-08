@@ -1,12 +1,15 @@
 <?php
 // ServiceController: Controlador para gestionar servicios
 // Demuestra el uso del patrón Front Controller con sistema de layouts
+require_once __DIR__ . '/../models/Service.php';
 
 class ServiceController {
     private $layout;
+    private Service $service;
 
     public function __construct($layout) {
         $this->layout = $layout;
+        $this->service = new Service;
     }
 
     public function index() {
@@ -18,42 +21,7 @@ class ServiceController {
             'heroTitle' => 'Servicios Profesionales',
             'heroSubtitle' => 'Soluciones integrales para tu negocio',
             'services' => [
-                [
-                    'icon' => 'fas fa-code',
-                    'title' => 'Desarrollo Web',
-                    'description' => 'Creamos sitios web modernos y responsivos con las últimas tecnologías.',
-                    'features' => ['HTML5 & CSS3', 'JavaScript ES6+', 'PHP & MySQL', 'Frameworks modernos']
-                ],
-                [
-                    'icon' => 'fas fa-mobile-alt',
-                    'title' => 'Aplicaciones Móviles',
-                    'description' => 'Desarrollamos aplicaciones móviles nativas y multiplataforma.',
-                    'features' => ['iOS & Android', 'React Native', 'Flutter', 'PWA']
-                ],
-                [
-                    'icon' => 'fas fa-database',
-                    'title' => 'Bases de Datos',
-                    'description' => 'Diseño y optimización de bases de datos para tu aplicación.',
-                    'features' => ['MySQL & PostgreSQL', 'MongoDB', 'Redis', 'Optimización']
-                ],
-                [
-                    'icon' => 'fas fa-cloud',
-                    'title' => 'Cloud Computing',
-                    'description' => 'Implementamos soluciones en la nube para escalabilidad.',
-                    'features' => ['AWS & Azure', 'Docker', 'Kubernetes', 'CI/CD']
-                ],
-                [
-                    'icon' => 'fas fa-shield-alt',
-                    'title' => 'Ciberseguridad',
-                    'description' => 'Protegemos tu aplicación con las mejores prácticas de seguridad.',
-                    'features' => ['Auditorías de seguridad', 'SSL/TLS', 'OWASP', 'Backup']
-                ],
-                [
-                    'icon' => 'fas fa-chart-line',
-                    'title' => 'Análisis de Datos',
-                    'description' => 'Extraemos insights valiosos de tus datos para tomar mejores decisiones.',
-                    'features' => ['Big Data', 'Machine Learning', 'Visualización', 'Reportes']
-                ]
+                $this->service->getServices()
             ],
             'testimonials' => [
                 [

@@ -1,5 +1,5 @@
 -- Insertar datos de prueba
-USE extructura_capas_it;
+USE educacion_it_clase;
 
 -- Usuario administrador
 INSERT IGNORE INTO users (name, email, password, role) VALUES 

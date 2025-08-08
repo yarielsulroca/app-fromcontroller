@@ -2,7 +2,7 @@
 //configuracion de la base de datos
 return [
     'host' => 'localhost',
-    'database' => 'educacion_it_clase',
+    'database' => 'proyecto_educacion_it',
     'username' => 'root',
     'password' => '',
     'charset' => 'utf8mb4',

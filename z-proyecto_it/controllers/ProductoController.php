@@ -1,10 +1,15 @@
 <?php
-
+require_once __DIR__ . '/../models/Producto.php';
 class ProductoController {
     private $layout;
+    private Producto $_producto;
+    private $_productos_ultimos;
     
     public function __construct($layout) {
         $this->layout = $layout;
+        $this->_producto = new Producto;
+
+        $this->_productos_ultimos = $this->_producto->getByCategoria("Mac");
     }
     
     public function index() {
@@ -13,31 +18,7 @@ class ProductoController {
         
         $this->layout->render('productos', [
             'pageTitle' => 'Productos',
-            'productos_ultimos' => [
-                [
-                    "id" => 4,
-                    "nombre" => "Lorem ipsum dolor #4",
-                    "descrip" => "Descripción 4",
-                    "precio" => 400,
-                    "imagen" => "productos/P004.jpg",
-                ],
-                [
-                    "id" => 5,
-                    "nombre" => "Lorem ipsum dolor #5",
-                    "descrip" => "Descripción 5",
-                    "precio" => 500,
-                    "imagen" => "productos/P005.jpg",
-                ],
-                [
-                    "id" => 6,
-                    "nombre" => "Lorem ipsum dolor #6",
-                    "descrip" => "Descripción 6",
-                    "precio" => 600,
-                    "imagen" => "productos/P006.jpg",
-                ],
-            ],
-            
-            
+            'productos_ultimos' => $this->_productos_ultimos,
         ]);
     }
 
@@ -56,7 +37,7 @@ class ProductoController {
         $this->layout->render('producto', [
             'pageTitle' => 'Producto',
             "producto" => [
-                "producto_id" => $id,
+                "id" => $id,
                 "nombre" => "Lorem ipsum dolor #$id",
                 "descrip" => "Descripción del producto $id",
                 "precio" => $id.'00',

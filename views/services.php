@@ -27,6 +27,7 @@
         </div>
 
         <div class="row g-4">
+             <?php print_r($services) ?>
             <?php foreach ($services as $service): ?>
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 shadow-sm border-0">
@@ -34,7 +35,7 @@
                         <div class="text-center mb-3">
                             <i class="<?php echo $service['icon']; ?> fa-3x text-primary"></i>
                         </div>
-                        <h4 class="card-title text-center mb-3"><?php echo htmlspecialchars($service['title']); ?></h4>
+                        <h4 class="card-title text-center mb-3"><?php echo htmlspecialchars($service['name']); ?></h4>
                         <p class="card-text text-muted"><?php echo htmlspecialchars($service['description']); ?></p>
                         
                         <h6 class="fw-bold mb-2">Características:</h6>

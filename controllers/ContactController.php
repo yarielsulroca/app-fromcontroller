@@ -9,7 +9,13 @@ class ContactController {
         $this->layout->setTitle('Contactos');
         $this->layout->setMetaDescription('Bienvenido a nuestro sitio web. Descubre nuestros servicios y productos.');
         $this->layout->addStyle('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">');
-        $this->layout->render('contact', ['pageTitle' => 'Contacto'
+        $this->layout->render('contact', ['pageTitle' => 'Contacto',
+        'contactInfo' => [
+                'email' => 'info@misitioweb.com',
+                'phone' => '+1 234 567 890',
+                'address' => 'Calle Principal 123, Ciudad, País',
+                'hours' => 'Lunes a Viernes: 9:00 AM - 6:00 PM'
+            ]
         ]);
        
 

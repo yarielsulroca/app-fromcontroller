@@ -1,6 +1,6 @@
 -- Crear base de datos
-CREATE DATABASE IF NOT EXISTS extructura_capas_it CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE extructura_capas_it;
+CREATE DATABASE IF NOT EXISTS educacion_it_clase CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE educacion_it_clase;
 
 -- Tabla de usuarios
 CREATE TABLE IF NOT EXISTS users (

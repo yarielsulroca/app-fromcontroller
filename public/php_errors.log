@@ -1,0 +1,130 @@
+[08-Aug-2025 00:35:12 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public/../core/Router.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php on line 5
+[08-Aug-2025 00:35:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public/../core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php on line 5
+[08-Aug-2025 00:35:13 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public/../core/Router.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php on line 5
+[08-Aug-2025 00:35:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public/../core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php on line 5
+[08-Aug-2025 00:35:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Router" not found in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php:12
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php on line 12
+[08-Aug-2025 00:35:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Router" not found in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php:12
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php on line 12
+[08-Aug-2025 00:37:25 Europe/Berlin] PHP Warning:  Undefined variable $contactInfo in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 30
+[08-Aug-2025 00:37:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 30
+[08-Aug-2025 00:37:25 Europe/Berlin] PHP Warning:  Undefined variable $contactInfo in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 42
+[08-Aug-2025 00:37:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 42
+[08-Aug-2025 00:37:25 Europe/Berlin] PHP Warning:  Undefined variable $contactInfo in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 54
+[08-Aug-2025 00:37:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 54
+[08-Aug-2025 00:37:25 Europe/Berlin] PHP Warning:  Undefined variable $contactInfo in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 66
+[08-Aug-2025 00:37:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 66
+[08-Aug-2025 00:37:47 Europe/Berlin] PHP Warning:  Undefined variable $contactInfo in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 30
+[08-Aug-2025 00:37:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 30
+[08-Aug-2025 00:37:47 Europe/Berlin] PHP Warning:  Undefined variable $contactInfo in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 42
+[08-Aug-2025 00:37:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 42
+[08-Aug-2025 00:37:47 Europe/Berlin] PHP Warning:  Undefined variable $contactInfo in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 54
+[08-Aug-2025 00:37:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 54
+[08-Aug-2025 00:37:47 Europe/Berlin] PHP Warning:  Undefined variable $contactInfo in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 66
+[08-Aug-2025 00:37:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\contact.php on line 66
+[08-Aug-2025 01:05:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Service" not found in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php:11
+Stack trace:
+#0 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\core\Route.php(51): ServiceController->__construct(Object(Layout))
+#1 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\core\Route.php(41): Route->handleRoute(Array)
+#2 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php(13): Route->handleRequest()
+#3 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php on line 11
+[08-Aug-2025 01:06:25 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers/models/Service.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php on line 4
+[08-Aug-2025 01:06:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers/models/Service.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php:4
+Stack trace:
+#0 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\core\Route.php(9): require_once()
+#1 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php on line 4
+[08-Aug-2025 01:06:25 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers/models/Service.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php on line 4
+[08-Aug-2025 01:06:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers/models/Service.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php:4
+Stack trace:
+#0 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\core\Route.php(9): require_once()
+#1 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php on line 4
+[08-Aug-2025 01:07:06 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers../models/Service.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php on line 4
+[08-Aug-2025 01:07:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers../models/Service.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php:4
+Stack trace:
+#0 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\core\Route.php(9): require_once()
+#1 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php on line 4
+[08-Aug-2025 01:07:06 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers../models/Service.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php on line 4
+[08-Aug-2025 01:07:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers../models/Service.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php:4
+Stack trace:
+#0 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\core\Route.php(9): require_once()
+#1 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php on line 4
+[08-Aug-2025 01:08:53 Europe/Berlin] PHP Fatal error:  Uncaught Exception: Error en consulta: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'educacion_it_clase.services' doesn't exist in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\core\Database.php:35
+Stack trace:
+#0 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\core\Database.php(40): Database->query('SELECT * FROM s...', Array)
+#1 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\models\BaseModel.php(26): Database->fetchAll('SELECT * FROM s...')
+#2 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\models\Service.php(42): BaseModel->all()
+#3 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\controllers\ServiceController.php(24): Service->getServices()
+#4 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\core\Route.php(52): ServiceController->index()
+#5 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\core\Route.php(41): Route->handleRoute(Array)
+#6 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\public\index.php(13): Route->handleRequest()
+#7 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\core\Database.php on line 35
+[08-Aug-2025 01:10:41 Europe/Berlin] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 35
+[08-Aug-2025 01:10:41 Europe/Berlin] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 37
+[08-Aug-2025 01:10:41 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 38
+[08-Aug-2025 01:10:41 Europe/Berlin] PHP Warning:  Undefined array key "features" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 42
+[08-Aug-2025 01:10:41 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 42
+[08-Aug-2025 01:11:13 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 24
+[08-Aug-2025 01:11:13 Europe/Berlin] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 35
+[08-Aug-2025 01:11:13 Europe/Berlin] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 37
+[08-Aug-2025 01:11:13 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 38
+[08-Aug-2025 01:11:13 Europe/Berlin] PHP Warning:  Undefined array key "features" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 42
+[08-Aug-2025 01:11:13 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 42
+[08-Aug-2025 01:11:14 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 24
+[08-Aug-2025 01:11:14 Europe/Berlin] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 35
+[08-Aug-2025 01:11:14 Europe/Berlin] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 37
+[08-Aug-2025 01:11:14 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 38
+[08-Aug-2025 01:11:14 Europe/Berlin] PHP Warning:  Undefined array key "features" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 42
+[08-Aug-2025 01:11:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 42
+[08-Aug-2025 01:11:15 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 24
+[08-Aug-2025 01:11:15 Europe/Berlin] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 35
+[08-Aug-2025 01:11:15 Europe/Berlin] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 37
+[08-Aug-2025 01:11:15 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 38
+[08-Aug-2025 01:11:15 Europe/Berlin] PHP Warning:  Undefined array key "features" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 42
+[08-Aug-2025 01:11:15 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 42
+[08-Aug-2025 01:11:30 Europe/Berlin] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 35
+[08-Aug-2025 01:11:30 Europe/Berlin] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 37
+[08-Aug-2025 01:11:30 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 38
+[08-Aug-2025 01:11:30 Europe/Berlin] PHP Warning:  Undefined array key "features" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 42
+[08-Aug-2025 01:11:30 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 42
+[08-Aug-2025 01:13:43 Europe/Berlin] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 35
+[08-Aug-2025 01:13:43 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 37
+[08-Aug-2025 01:13:43 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 38
+[08-Aug-2025 01:13:43 Europe/Berlin] PHP Warning:  Undefined array key "features" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 42
+[08-Aug-2025 01:13:43 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 42
+[08-Aug-2025 01:15:49 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 30
+[08-Aug-2025 01:15:49 Europe/Berlin] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 36
+[08-Aug-2025 01:15:49 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 38
+[08-Aug-2025 01:15:49 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 39
+[08-Aug-2025 01:15:49 Europe/Berlin] PHP Warning:  Undefined array key "features" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 43
+[08-Aug-2025 01:15:49 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 43
+[08-Aug-2025 01:16:03 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 30
+[08-Aug-2025 01:16:03 Europe/Berlin] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 36
+[08-Aug-2025 01:16:03 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 38
+[08-Aug-2025 01:16:03 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 39
+[08-Aug-2025 01:16:03 Europe/Berlin] PHP Warning:  Undefined array key "features" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 43
+[08-Aug-2025 01:16:03 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 43
+[08-Aug-2025 01:17:05 Europe/Berlin] PHP Warning:  Undefined array key "icon" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 36
+[08-Aug-2025 01:17:05 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 38
+[08-Aug-2025 01:17:05 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 39
+[08-Aug-2025 01:17:05 Europe/Berlin] PHP Warning:  Undefined array key "features" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 43
+[08-Aug-2025 01:17:05 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\views\services.php on line 43

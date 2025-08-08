@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/BaseModel.php';
 
-class Service extends BaseModel {
-    protected $table = 'services';
+class Producto extends BaseModel {
+    protected $table = 'productos';
     
     protected $timestamps = true;
     protected $createdAt = 'created_at';
@@ -11,11 +11,12 @@ class Service extends BaseModel {
 
     protected $primaryKey = 'id';
     protected $fillable = [
-        'name',
-        'description',
-        'price',
-        'duration',
-        "category"
+        'nombre',
+        'descrip',
+        'precio',
+        'imagen',
+        "stock",
+        "categoria_id"
     ];
     
     // Buscar usuario por email
@@ -25,20 +26,24 @@ class Service extends BaseModel {
     
     
     // Crear usuario con contraseña encriptada
-    public function createService($data) {
+    public function createProducto($data) {
 
         return $this->create($data);
     }
     
     // Actualizar usuario con contraseña encriptada
-    public function updateService($id, $data) {
+    public function updateProducto($id, $data) {
 
         return $this->update($id, $data);
     }
     
     
     // Obtener usuarios normales
-    public function getServices() {
+    public function getProductos() {
         return $this->all();
+    }
+
+    public function getByCategoria($categoria) {
+        return $this->where('categoria', $categoria);
     }
 }
