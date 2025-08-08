@@ -1,1 +1,0 @@
-<h1><?php echo "producto-detalle"; ?></h1>

@@ -2,7 +2,7 @@
 //configuracion de la base de datos
 return [
     'host' => 'localhost',
-    'database' => 'extructura_capas_it',
+    'database' => 'cursoit',
     'username' => 'root',
     'password' => '',
     'charset' => 'utf8mb4',

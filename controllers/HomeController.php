@@ -1,25 +1,44 @@
 <?php
-// HomeController: Controlador principal para las páginas básicas del sitio
+require_once __DIR__ . '/../models/User.php';
+require_once __DIR__ . '/../models/Product.php';
+require_once __DIR__ . '/../models/Service.php';
 
 class HomeController {
     private $layout;
+    private $userModel;
+    private $productModel;
+    private $serviceModel;
     
     public function __construct($layout) {
         $this->layout = $layout;
+        $this->userModel = new User();
+        $this->productModel = new Product();
+        $this->serviceModel = new Service();
     }
     
-    // Página de inicio
+    // SOLO página de inicio/dashboard
     public function index() {
         $this->layout->setTitle('Inicio - Mi Sitio Web');
         $this->layout->setMetaDescription('Bienvenido a nuestro sitio web. Descubre nuestros servicios y productos.');
         
-        // Agregar estilos específicos para la página de inicio
-        $this->layout->addStyle('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">');
+        // Obtener datos dinámicos para el dashboard
+        $totalUsers = $this->userModel->count();
+        $totalProducts = $this->productModel->count();
+        $totalServices = $this->serviceModel->count();
+        $recentProducts = $this->productModel->getInStock();
+        $featuredServices = $this->serviceModel->getOrderedByPrice('ASC');
         
         $this->layout->render('home', [
             'pageTitle' => 'Bienvenido a Nuestro Sitio',
             'heroTitle' => 'Soluciones Innovadoras',
             'heroSubtitle' => 'Descubre cómo podemos ayudarte a alcanzar tus objetivos',
+            'stats' => [
+                'users' => $totalUsers,
+                'products' => $totalProducts,
+                'services' => $totalServices
+            ],
+            'recentProducts' => array_slice($recentProducts, 0, 3),
+            'featuredServices' => array_slice($featuredServices, 0, 3),
             'features' => [
                 [
                     'icon' => 'fas fa-rocket',
@@ -39,48 +58,4 @@ class HomeController {
             ]
         ]);
     }
-    
-    // Página Acerca de
-    public function about() {
-        $this->layout->setTitle('Acerca de - Mi Sitio Web');
-        $this->layout->setMetaDescription('Conoce más sobre nuestra empresa, misión, visión y valores.');
-        
-        $this->layout->render('about', [
-            'pageTitle' => 'Acerca de Nosotros',
-            'companyInfo' => [
-                'name' => 'Mi Empresa S.A.',
-                'founded' => '2020',
-                'employees' => '50+',
-                'clients' => '200+'
-            ],
-            'mission' => 'Proporcionar soluciones tecnológicas innovadoras que impulsen el crecimiento de nuestros clientes.',
-            'vision' => 'Ser líderes en el desarrollo de soluciones digitales que transformen la manera de hacer negocios.',
-            'values' => [
-                'Innovación',
-                'Calidad',
-                'Integridad',
-                'Colaboración',
-                'Excelencia'
-            ]
-        ]);
-    }
-    
-    // Página de Contacto
-    public function contact() {
-        $this->layout->setTitle('Contacto - Mi Sitio Web');
-        $this->layout->setMetaDescription('Contáctanos para obtener más información sobre nuestros servicios.');
-        
-        // Agregar script específico para validación del formulario de contacto
-        $this->layout->addScript('<script src="assets/js/contact.js"></script>');
-        
-        $this->layout->render('contact', [
-            'pageTitle' => 'Contáctanos',
-            'contactInfo' => [
-                'email' => 'info@misitioweb.com',
-                'phone' => '+1 234 567 890',
-                'address' => 'Calle Principal 123, Ciudad, País',
-                'hours' => 'Lunes a Viernes: 9:00 AM - 6:00 PM'
-            ]
-        ]);
-    }
-} 
+}

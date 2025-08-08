@@ -1,0 +1,262 @@
+[05-Aug-2025 16:13:07 UTC] PHP Warning:  require_once(models/User.php): Failed to open stream: No such file or directory in C:\laragon\www\app2\controllers\HomeController.php on line 2
+[05-Aug-2025 16:13:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'models/User.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\app2\controllers\HomeController.php:2
+Stack trace:
+#0 C:\laragon\www\app2\core\Router.php(103): require_once()
+#1 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#2 {main}
+  thrown in C:\laragon\www\app2\controllers\HomeController.php on line 2
+[05-Aug-2025 16:13:09 UTC] PHP Warning:  require_once(models/User.php): Failed to open stream: No such file or directory in C:\laragon\www\app2\controllers\HomeController.php on line 2
+[05-Aug-2025 16:13:09 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'models/User.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\app2\controllers\HomeController.php:2
+Stack trace:
+#0 C:\laragon\www\app2\core\Router.php(103): require_once()
+#1 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#2 {main}
+  thrown in C:\laragon\www\app2\controllers\HomeController.php on line 2
+[05-Aug-2025 16:16:10 UTC] PHP Warning:  require_once(models/BaseModel.php): Failed to open stream: No such file or directory in C:\laragon\www\app2\models\User.php on line 2
+[05-Aug-2025 16:16:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'models/BaseModel.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\app2\models\User.php:2
+Stack trace:
+#0 C:\laragon\www\app2\controllers\HomeController.php(2): require_once()
+#1 C:\laragon\www\app2\core\Router.php(103): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#3 {main}
+  thrown in C:\laragon\www\app2\models\User.php on line 2
+[05-Aug-2025 16:16:12 UTC] PHP Warning:  require_once(models/BaseModel.php): Failed to open stream: No such file or directory in C:\laragon\www\app2\models\User.php on line 2
+[05-Aug-2025 16:16:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'models/BaseModel.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\app2\models\User.php:2
+Stack trace:
+#0 C:\laragon\www\app2\controllers\HomeController.php(2): require_once()
+#1 C:\laragon\www\app2\core\Router.php(103): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#3 {main}
+  thrown in C:\laragon\www\app2\models\User.php on line 2
+[05-Aug-2025 16:16:14 UTC] PHP Warning:  require_once(models/BaseModel.php): Failed to open stream: No such file or directory in C:\laragon\www\app2\models\User.php on line 2
+[05-Aug-2025 16:16:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'models/BaseModel.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\app2\models\User.php:2
+Stack trace:
+#0 C:\laragon\www\app2\controllers\HomeController.php(2): require_once()
+#1 C:\laragon\www\app2\core\Router.php(103): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#3 {main}
+  thrown in C:\laragon\www\app2\models\User.php on line 2
+[05-Aug-2025 16:16:15 UTC] PHP Warning:  require_once(models/BaseModel.php): Failed to open stream: No such file or directory in C:\laragon\www\app2\models\User.php on line 2
+[05-Aug-2025 16:16:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'models/BaseModel.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\app2\models\User.php:2
+Stack trace:
+#0 C:\laragon\www\app2\controllers\HomeController.php(2): require_once()
+#1 C:\laragon\www\app2\core\Router.php(103): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#3 {main}
+  thrown in C:\laragon\www\app2\models\User.php on line 2
+[05-Aug-2025 16:16:19 UTC] PHP Warning:  require_once(models/BaseModel.php): Failed to open stream: No such file or directory in C:\laragon\www\app2\models\User.php on line 2
+[05-Aug-2025 16:16:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'models/BaseModel.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\app2\models\User.php:2
+Stack trace:
+#0 C:\laragon\www\app2\controllers\HomeController.php(2): require_once()
+#1 C:\laragon\www\app2\core\Router.php(103): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#3 {main}
+  thrown in C:\laragon\www\app2\models\User.php on line 2
+[05-Aug-2025 16:16:19 UTC] PHP Warning:  require_once(models/BaseModel.php): Failed to open stream: No such file or directory in C:\laragon\www\app2\models\User.php on line 2
+[05-Aug-2025 16:16:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'models/BaseModel.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\app2\models\User.php:2
+Stack trace:
+#0 C:\laragon\www\app2\controllers\HomeController.php(2): require_once()
+#1 C:\laragon\www\app2\core\Router.php(103): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#3 {main}
+  thrown in C:\laragon\www\app2\models\User.php on line 2
+[05-Aug-2025 16:18:14 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\laragon\www\app2\models\BaseModel.php:14
+Stack trace:
+#0 C:\laragon\www\app2\controllers\HomeController.php(14): BaseModel->__construct()
+#1 C:\laragon\www\app2\core\Router.php(105): HomeController->__construct(Object(Layout))
+#2 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#3 {main}
+  thrown in C:\laragon\www\app2\models\BaseModel.php on line 14
+[05-Aug-2025 16:18:16 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\laragon\www\app2\models\BaseModel.php:14
+Stack trace:
+#0 C:\laragon\www\app2\controllers\HomeController.php(14): BaseModel->__construct()
+#1 C:\laragon\www\app2\core\Router.php(105): HomeController->__construct(Object(Layout))
+#2 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#3 {main}
+  thrown in C:\laragon\www\app2\models\BaseModel.php on line 14
+[05-Aug-2025 16:18:18 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\laragon\www\app2\models\BaseModel.php:14
+Stack trace:
+#0 C:\laragon\www\app2\controllers\HomeController.php(14): BaseModel->__construct()
+#1 C:\laragon\www\app2\core\Router.php(105): HomeController->__construct(Object(Layout))
+#2 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#3 {main}
+  thrown in C:\laragon\www\app2\models\BaseModel.php on line 14
+[05-Aug-2025 16:18:18 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\laragon\www\app2\models\BaseModel.php:14
+Stack trace:
+#0 C:\laragon\www\app2\controllers\HomeController.php(14): BaseModel->__construct()
+#1 C:\laragon\www\app2\core\Router.php(105): HomeController->__construct(Object(Layout))
+#2 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#3 {main}
+  thrown in C:\laragon\www\app2\models\BaseModel.php on line 14
+[05-Aug-2025 16:18:21 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\laragon\www\app2\models\BaseModel.php:14
+Stack trace:
+#0 C:\laragon\www\app2\controllers\HomeController.php(14): BaseModel->__construct()
+#1 C:\laragon\www\app2\core\Router.php(105): HomeController->__construct(Object(Layout))
+#2 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#3 {main}
+  thrown in C:\laragon\www\app2\models\BaseModel.php on line 14
+[05-Aug-2025 16:18:21 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\laragon\www\app2\models\BaseModel.php:14
+Stack trace:
+#0 C:\laragon\www\app2\controllers\HomeController.php(14): BaseModel->__construct()
+#1 C:\laragon\www\app2\core\Router.php(105): HomeController->__construct(Object(Layout))
+#2 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#3 {main}
+  thrown in C:\laragon\www\app2\models\BaseModel.php on line 14
+[05-Aug-2025 16:19:29 UTC] PHP Warning:  require_once(models/User.php): Failed to open stream: No such file or directory in C:\laragon\www\app2\controllers\AboutController.php on line 2
+[05-Aug-2025 16:19:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'models/User.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\app2\controllers\AboutController.php:2
+Stack trace:
+#0 C:\laragon\www\app2\core\Router.php(103): require_once()
+#1 C:\laragon\www\app2\public\index.php(13): Router->handleRequest()
+#2 {main}
+  thrown in C:\laragon\www\app2\controllers\AboutController.php on line 2
+[05-Aug-2025 16:20:57 UTC] PHP Warning:  Undefined array key "icon" in C:\laragon\www\app2\views\services.php on line 35
+[05-Aug-2025 16:20:57 UTC] PHP Warning:  Undefined array key "title" in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:20:57 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:20:57 UTC] PHP Warning:  Undefined array key "features" in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:20:57 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:20:57 UTC] PHP Warning:  Undefined array key "icon" in C:\laragon\www\app2\views\services.php on line 35
+[05-Aug-2025 16:20:57 UTC] PHP Warning:  Undefined array key "title" in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:20:57 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:20:57 UTC] PHP Warning:  Undefined array key "features" in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:20:57 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:20:57 UTC] PHP Warning:  Undefined array key "icon" in C:\laragon\www\app2\views\services.php on line 35
+[05-Aug-2025 16:20:57 UTC] PHP Warning:  Undefined array key "title" in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:20:57 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:20:57 UTC] PHP Warning:  Undefined array key "features" in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:20:57 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:21:15 UTC] PHP Warning:  Undefined array key "icon" in C:\laragon\www\app2\views\services.php on line 35
+[05-Aug-2025 16:21:15 UTC] PHP Warning:  Undefined array key "title" in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:21:15 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:21:15 UTC] PHP Warning:  Undefined array key "features" in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:21:15 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:21:15 UTC] PHP Warning:  Undefined array key "icon" in C:\laragon\www\app2\views\services.php on line 35
+[05-Aug-2025 16:21:15 UTC] PHP Warning:  Undefined array key "title" in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:21:15 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:21:15 UTC] PHP Warning:  Undefined array key "features" in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:21:15 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:21:15 UTC] PHP Warning:  Undefined array key "icon" in C:\laragon\www\app2\views\services.php on line 35
+[05-Aug-2025 16:21:15 UTC] PHP Warning:  Undefined array key "title" in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:21:15 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:21:15 UTC] PHP Warning:  Undefined array key "features" in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:21:15 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:23:35 UTC] PHP Warning:  Undefined array key "features" in C:\laragon\www\app2\views\products.php on line 47
+[05-Aug-2025 16:23:35 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\products.php on line 47
+[05-Aug-2025 16:23:35 UTC] PHP Warning:  Undefined array key "features" in C:\laragon\www\app2\views\products.php on line 47
+[05-Aug-2025 16:23:35 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\products.php on line 47
+[05-Aug-2025 16:23:35 UTC] PHP Warning:  Undefined array key "features" in C:\laragon\www\app2\views\products.php on line 47
+[05-Aug-2025 16:23:35 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\products.php on line 47
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Undefined array key "image" in C:\laragon\www\app2\views\blog.php on line 35
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Undefined array key "title" in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Undefined array key "excerpt" in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Undefined array key "category" in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Undefined array key "tags" in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Undefined array key "author" in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Undefined array key "date" in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Undefined array key "id" in C:\laragon\www\app2\views\blog.php on line 59
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 35
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 59
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 35
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 59
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 35
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:39 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on int in C:\laragon\www\app2\views\blog.php on line 59
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on float in C:\laragon\www\app2\views\blog.php on line 35
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on float in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on float in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on float in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on float in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on float in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on float in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on float in C:\laragon\www\app2\views\blog.php on line 59
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 35
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 59
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 35
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 37
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 38
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 41
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\blog.php on line 42
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 50
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:40 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\laragon\www\app2\views\blog.php on line 54
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\app2\views\blog.php on line 59
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  Undefined variable $categories in C:\laragon\www\app2\views\blog.php on line 105
+[05-Aug-2025 16:23:40 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\blog.php on line 105
+[05-Aug-2025 16:30:23 UTC] PHP Warning:  Undefined array key "icon" in C:\laragon\www\app2\views\services.php on line 35
+[05-Aug-2025 16:30:23 UTC] PHP Warning:  Undefined array key "title" in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:30:23 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:30:23 UTC] PHP Warning:  Undefined array key "features" in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:30:23 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:30:23 UTC] PHP Warning:  Undefined array key "icon" in C:\laragon\www\app2\views\services.php on line 35
+[05-Aug-2025 16:30:23 UTC] PHP Warning:  Undefined array key "title" in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:30:23 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:30:24 UTC] PHP Warning:  Undefined array key "features" in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:30:24 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:30:24 UTC] PHP Warning:  Undefined array key "icon" in C:\laragon\www\app2\views\services.php on line 35
+[05-Aug-2025 16:30:24 UTC] PHP Warning:  Undefined array key "title" in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:30:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\app2\views\services.php on line 37
+[05-Aug-2025 16:30:24 UTC] PHP Warning:  Undefined array key "features" in C:\laragon\www\app2\views\services.php on line 42
+[05-Aug-2025 16:30:24 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\app2\views\services.php on line 42
