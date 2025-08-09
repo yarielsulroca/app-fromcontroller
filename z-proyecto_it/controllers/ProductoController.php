@@ -31,21 +31,32 @@ class ProductoController {
 
         $id = $_GET['id'];
 
+        $producto = $this->_producto->findById($id);
+
         $this->layout->setTitle('ComercioIT | Producto');
         $this->layout->setMetaDescription('Producto.');
         
-        $this->layout->render('producto', [
-            'pageTitle' => 'Producto',
-            "producto" => [
-                "id" => $id,
-                "nombre" => "Lorem ipsum dolor #$id",
-                "descrip" => "Descripción del producto $id",
-                "precio" => $id.'00',
-                "imagen" => "productos/P00$id.jpg",
-                "stock" => $id.'50',
-            ],
-            
-        ]);
+        if(!empty($producto))
+        {
+            $this->layout->render('producto', [
+                'pageTitle' => 'Producto',
+                "producto" => $producto
+                
+            ]);
+        }
+        else 
+        {
+            $this->layout->render('error', [
+                'errorCode' => '404',
+                'errorTitle' => 'Página no encontrada',
+                'errorMessage' => 'Lo sentimos, la página que buscas no existe o ha sido movida.',
+                'suggestions' => [
+                    'Verifica que la URL sea correcta',
+                    'Usa el menú de navegación para encontrar lo que buscas',
+                    'Contacta con nosotros si necesitas ayuda'
+                ]
+            ]);
+        }
     }
     
 

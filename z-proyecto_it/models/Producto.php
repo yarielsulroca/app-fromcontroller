@@ -16,7 +16,7 @@ class Producto extends BaseModel {
         'precio',
         'imagen',
         "stock",
-        "categoria_id"
+        "categoria"
     ];
     
     // Buscar usuario por email

@@ -38,3 +38,35 @@ Stack trace:
 [08-Aug-2025 02:37:23 Europe/Berlin] PHP Warning:  Undefined array key "nombre" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 27
 [08-Aug-2025 02:37:23 Europe/Berlin] PHP Warning:  Undefined array key "descrip" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 28
 [08-Aug-2025 02:37:23 Europe/Berlin] PHP Warning:  Undefined array key "precio" in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\productos.php on line 29
+[09-Aug-2025 01:23:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 6
+[09-Aug-2025 01:23:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 12
+[09-Aug-2025 01:23:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 14
+[09-Aug-2025 01:23:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 18
+[09-Aug-2025 01:23:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 19
+[09-Aug-2025 01:25:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 6
+[09-Aug-2025 01:25:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 12
+[09-Aug-2025 01:25:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 14
+[09-Aug-2025 01:25:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 18
+[09-Aug-2025 01:25:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 19
+[09-Aug-2025 01:25:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 6
+[09-Aug-2025 01:25:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 12
+[09-Aug-2025 01:25:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 14
+[09-Aug-2025 01:25:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 18
+[09-Aug-2025 01:25:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 19
+[09-Aug-2025 01:25:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 6
+[09-Aug-2025 01:25:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 12
+[09-Aug-2025 01:25:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 14
+[09-Aug-2025 01:25:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 18
+[09-Aug-2025 01:25:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\views\producto.php on line 19
+[09-Aug-2025 01:29:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property HomeController::$_producto must not be accessed before initialization in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\controllers\HomeController.php:18
+Stack trace:
+#0 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\core\Router.php(43): HomeController->index()
+#1 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\public\index.php(13): Router->handleRequest()
+#2 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\controllers\HomeController.php on line 18
+[09-Aug-2025 01:29:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property HomeController::$_producto must not be accessed before initialization in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\controllers\HomeController.php:18
+Stack trace:
+#0 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\core\Router.php(43): HomeController->index()
+#1 C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\public\index.php(13): Router->handleRequest()
+#2 {main}
+  thrown in C:\xampp\htdocs\ComercioIT-PHP-Avanzado\Clases\Clase 1\app-fromcontroller\z-proyecto_it\controllers\HomeController.php on line 18
