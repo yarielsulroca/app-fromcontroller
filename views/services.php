@@ -33,23 +33,25 @@
                 <div class="card h-100 shadow-sm border-0">
                     <div class="card-body p-4">
                         <div class="text-center mb-3">
-                            <i class="<?php echo $service['icon']; ?> fa-3x text-primary"></i>
+                            <i class="fas fa-cogs fa-3x text-primary"></i>
                         </div>
                         <h4 class="card-title text-center mb-3"><?php echo htmlspecialchars($service['name']); ?></h4>
                         <p class="card-text text-muted"><?php echo htmlspecialchars($service['description']); ?></p>
                         
-                        <h6 class="fw-bold mb-2">Características:</h6>
-                        <ul class="list-unstyled">
-                            <?php foreach ($service['features'] as $feature): ?>
-                            <li class="mb-1">
-                                <i class="fas fa-check text-success me-2"></i>
-                                <?php echo htmlspecialchars($feature); ?>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-primary"><?php echo htmlspecialchars($service['category']); ?></span>
+                            <span class="text-success fw-bold">$<?php echo number_format($service['price'], 2); ?></span>
+                        </div>
+                        
+                        <?php if (!empty($service['duration'])): ?>
+                        <p class="text-muted small">
+                            <i class="fas fa-clock me-1"></i>
+                            Duración: <?php echo htmlspecialchars($service['duration']); ?> horas
+                        </p>
+                        <?php endif; ?>
                     </div>
                     <div class="card-footer bg-transparent border-0 text-center">
-                        <a href="?route=services&action=detail&id=<?php echo array_search($service, $services); ?>" 
+                        <a href="?route=service-detail&id=<?php echo $service['id']; ?>" 
                            class="btn btn-outline-primary">Más Información</a>
                     </div>
                 </div>
@@ -108,4 +110,4 @@
         <a href="?route=contact" class="btn btn-light btn-lg me-3">Contactar Ahora</a>
         <a href="?route=about" class="btn btn-outline-light btn-lg">Conocer Más</a>
     </div>
-</section> 
+</section>

@@ -1,116 +1,263 @@
 <?php
-// BlogController: Controlador para gestionar el blog
-// Demuestra el uso del patrón Front Controller con sistema de layouts
+require_once __DIR__ . '/../models/BlogPost.php';
+require_once __DIR__ . '/../models/User.php';
 
 class BlogController {
     private $layout;
-
+    private $blogPostModel;
+    private $userModel;
+    
     public function __construct($layout) {
         $this->layout = $layout;
+        $this->blogPostModel = new BlogPost();
+        $this->userModel = new User();
     }
-
+    
+    // Listar posts del blog (página pública)
     public function index() {
         $this->layout->setTitle('Blog - Mi Sitio Web');
         $this->layout->setMetaDescription('Artículos y noticias sobre tecnología, desarrollo web y tendencias del sector.');
+        
+        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $posts = $this->blogPostModel->paginate($page, 6);
         
         $this->layout->render('blog', [
             'pageTitle' => 'Nuestro Blog',
             'heroTitle' => 'Blog Tecnológico',
             'heroSubtitle' => 'Artículos, tutoriales y noticias del mundo tech',
-            'posts' => [
-                [
-                    'id' => 1,
-                    'title' => 'Introducción al Patrón Front Controller',
-                    'excerpt' => 'Descubre cómo implementar el patrón Front Controller en PHP para crear aplicaciones web más organizadas y mantenibles.',
-                    'author' => 'Equipo de Desarrollo',
-                    'date' => '2024-01-15',
-                    'category' => 'Arquitectura',
-                    'tags' => ['PHP', 'Patrones', 'Front Controller'],
-                    'image' => 'fas fa-code'
-                ],
-                [
-                    'id' => 2,
-                    'title' => 'Mejores Prácticas en Desarrollo Web',
-                    'excerpt' => 'Conoce las mejores prácticas para crear sitios web modernos, rápidos y accesibles.',
-                    'author' => 'María González',
-                    'date' => '2024-01-10',
-                    'category' => 'Desarrollo Web',
-                    'tags' => ['HTML5', 'CSS3', 'JavaScript', 'Accesibilidad'],
-                    'image' => 'fas fa-laptop-code'
-                ],
-                [
-                    'id' => 3,
-                    'title' => 'Optimización de Bases de Datos',
-                    'excerpt' => 'Técnicas avanzadas para optimizar el rendimiento de tus bases de datos MySQL.',
-                    'author' => 'Carlos Rodríguez',
-                    'date' => '2024-01-05',
-                    'category' => 'Bases de Datos',
-                    'tags' => ['MySQL', 'Optimización', 'Performance'],
-                    'image' => 'fas fa-database'
-                ],
-                [
-                    'id' => 4,
-                    'title' => 'Seguridad en Aplicaciones Web',
-                    'excerpt' => 'Guía completa para proteger tus aplicaciones web contra vulnerabilidades comunes.',
-                    'author' => 'Ana Martínez',
-                    'date' => '2023-12-28',
-                    'category' => 'Seguridad',
-                    'tags' => ['Seguridad', 'OWASP', 'Vulnerabilidades'],
-                    'image' => 'fas fa-shield-alt'
-                ],
-                [
-                    'id' => 5,
-                    'title' => 'Introducción a APIs REST',
-                    'excerpt' => 'Aprende a diseñar e implementar APIs RESTful efectivas para tus aplicaciones.',
-                    'author' => 'Luis Pérez',
-                    'date' => '2023-12-20',
-                    'category' => 'APIs',
-                    'tags' => ['REST', 'API', 'JSON', 'HTTP'],
-                    'image' => 'fas fa-cloud'
-                ],
-                [
-                    'id' => 6,
-                    'title' => 'Desarrollo de Aplicaciones Móviles',
-                    'excerpt' => 'Comparativa entre desarrollo nativo y multiplataforma para aplicaciones móviles.',
-                    'author' => 'Sofía López',
-                    'date' => '2023-12-15',
-                    'category' => 'Móvil',
-                    'tags' => ['React Native', 'Flutter', 'iOS', 'Android'],
-                    'image' => 'fas fa-mobile-alt'
-                ]
-            ],
-            'categories' => [
-                'Arquitectura' => 1,
-                'Desarrollo Web' => 1,
-                'Bases de Datos' => 1,
-                'Seguridad' => 1,
-                'APIs' => 1,
-                'Móvil' => 1
-            ]
+            'posts' => $posts
         ]);
     }
-
+    
+    // Detalle de post del blog (página pública)
     public function post($id = null) {
         if (!$id) {
             header('Location: ?route=blog');
             exit;
         }
-
-        $this->layout->setTitle('Artículo del Blog - Mi Sitio Web');
-        $this->layout->setMetaDescription('Artículo detallado sobre tecnología y desarrollo web.');
+        
+        $post = $this->blogPostModel->find($id);
+        
+        if (!$post || $post['status'] !== 'published') {
+            header('Location: ?route=blog');
+            exit;
+        }
+        
+        // Obtener información del autor
+        $author = null;
+        if ($post['author_id']) {
+            $author = $this->userModel->find($post['author_id']);
+        }
+        
+        $this->layout->setTitle($post['title'] . ' - Blog');
+        $this->layout->setMetaDescription($post['excerpt']);
         
         $this->layout->render('blog/post', [
-            'postId' => $id,
-            'pageTitle' => 'Artículo del Blog',
-            'post' => [
-                'id' => $id,
-                'title' => 'Artículo ' . $id,
-                'content' => 'Contenido detallado del artículo...',
-                'author' => 'Autor',
-                'date' => '2024-01-01',
-                'category' => 'Categoría',
-                'tags' => ['Tag1', 'Tag2']
-            ]
+            'post' => $post,
+            'author' => $author
         ]);
     }
-} 
+    
+    // ADMIN: Listar posts del blog (panel de administración)
+    public function admin() {
+        $this->layout->setTitle('Administrar Blog - Panel de Control');
+        
+        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $posts = $this->blogPostModel->paginate($page, 10);
+        
+        $this->layout->render('admin/blog/index', [
+            'pageTitle' => 'Administrar Blog',
+            'posts' => $posts
+        ]);
+    }
+    
+    // ADMIN: Mostrar formulario de creación
+    public function create() {
+        $this->layout->setTitle('Crear Post - Panel de Control');
+        
+        $authors = $this->userModel->getAdmins();
+        
+        $this->layout->render('admin/blog/create', [
+            'pageTitle' => 'Crear Nuevo Post',
+            'authors' => $authors
+        ]);
+    }
+    
+    // ADMIN: Guardar nuevo post
+    public function store() {
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            header('Location: ?route=blog-admin');
+            exit;
+        }
+        
+        // Validación
+        $errors = $this->validateBlogPost($_POST);
+        
+        if (!empty($errors)) {
+            $authors = $this->userModel->getAdmins();
+            $this->layout->render('admin/blog/create', [
+                'pageTitle' => 'Crear Nuevo Post',
+                'errors' => $errors,
+                'old' => $_POST,
+                'authors' => $authors
+            ]);
+            return;
+        }
+        
+        try {
+            $postId = $this->blogPostModel->create($_POST);
+            
+            $_SESSION['success'] = 'Post creado exitosamente.';
+            header('Location: ?route=blog-admin');
+            exit;
+            
+        } catch (Exception $e) {
+            $authors = $this->userModel->getAdmins();
+            $this->layout->render('admin/blog/create', [
+                'pageTitle' => 'Crear Nuevo Post',
+                'errors' => ['general' => 'Error al crear post: ' . $e->getMessage()],
+                'old' => $_POST,
+                'authors' => $authors
+            ]);
+        }
+    }
+    
+    // ADMIN: Mostrar formulario de edición
+    public function edit($id) {
+        $this->layout->setTitle('Editar Post - Panel de Control');
+        
+        $post = $this->blogPostModel->find($id);
+        
+        if (!$post) {
+            $_SESSION['error'] = 'Post no encontrado.';
+            header('Location: ?route=blog-admin');
+            exit;
+        }
+        
+        $authors = $this->userModel->getAdmins();
+        
+        $this->layout->render('admin/blog/edit', [
+            'pageTitle' => 'Editar Post',
+            'post' => $post,
+            'authors' => $authors
+        ]);
+    }
+    
+    // ADMIN: Actualizar post
+    public function update($id) {
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            header('Location: ?route=blog-admin');
+            exit;
+        }
+        
+        // Validación
+        $errors = $this->validateBlogPost($_POST, $id);
+        
+        if (!empty($errors)) {
+            $post = $this->blogPostModel->find($id);
+            $authors = $this->userModel->getAdmins();
+            $this->layout->render('admin/blog/edit', [
+                'pageTitle' => 'Editar Post',
+                'post' => $post,
+                'errors' => $errors,
+                'old' => $_POST,
+                'authors' => $authors
+            ]);
+            return;
+        }
+        
+        try {
+            $this->blogPostModel->update($id, $_POST);
+            
+            $_SESSION['success'] = 'Post actualizado exitosamente.';
+            header('Location: ?route=blog-admin');
+            exit;
+            
+        } catch (Exception $e) {
+            $post = $this->blogPostModel->find($id);
+            $authors = $this->userModel->getAdmins();
+            $this->layout->render('admin/blog/edit', [
+                'pageTitle' => 'Editar Post',
+                'post' => $post,
+                'errors' => ['general' => 'Error al actualizar post: ' . $e->getMessage()],
+                'old' => $_POST,
+                'authors' => $authors
+            ]);
+        }
+    }
+    
+    // ADMIN: Eliminar post
+    public function delete($id) {
+        try {
+            $this->blogPostModel->delete($id);
+            $_SESSION['success'] = 'Post eliminado exitosamente.';
+        } catch (Exception $e) {
+            $_SESSION['error'] = 'Error al eliminar post: ' . $e->getMessage();
+        }
+        
+        header('Location: ?route=blog-admin');
+        exit;
+    }
+    
+    // ADMIN: Publicar post
+    public function publish($id) {
+        try {
+            $this->blogPostModel->publish($id);
+            $_SESSION['success'] = 'Post publicado exitosamente.';
+        } catch (Exception $e) {
+            $_SESSION['error'] = 'Error al publicar post: ' . $e->getMessage();
+        }
+        
+        header('Location: ?route=blog-admin');
+        exit;
+    }
+    
+    // ADMIN: Despublicar post
+    public function unpublish($id) {
+        try {
+            $this->blogPostModel->unpublish($id);
+            $_SESSION['success'] = 'Post despublicado exitosamente.';
+        } catch (Exception $e) {
+            $_SESSION['error'] = 'Error al despublicar post: ' . $e->getMessage();
+        }
+        
+        header('Location: ?route=blog-admin');
+        exit;
+    }
+    
+    // Validación de datos
+    private function validateBlogPost($data, $id = null) {
+        $errors = [];
+        
+        // Validar título
+        if (empty($data['title'])) {
+            $errors['title'] = 'El título es requerido.';
+        } elseif (strlen($data['title']) < 5) {
+            $errors['title'] = 'El título debe tener al menos 5 caracteres.';
+        }
+        
+        // Validar contenido
+        if (empty($data['content'])) {
+            $errors['content'] = 'El contenido es requerido.';
+        } elseif (strlen($data['content']) < 50) {
+            $errors['content'] = 'El contenido debe tener al menos 50 caracteres.';
+        }
+        
+        // Validar excerpt
+        if (!empty($data['excerpt']) && strlen($data['excerpt']) > 500) {
+            $errors['excerpt'] = 'El extracto no puede tener más de 500 caracteres.';
+        }
+        
+        // Validar autor
+        if (!empty($data['author_id']) && !$this->userModel->find($data['author_id'])) {
+            $errors['author_id'] = 'El autor seleccionado no existe.';
+        }
+        
+        // Validar estado
+        if (!empty($data['status']) && !in_array($data['status'], ['draft', 'published'])) {
+            $errors['status'] = 'El estado no es válido.';
+        }
+        
+        return $errors;
+    }
+}
