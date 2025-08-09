@@ -28,9 +28,15 @@ class User extends BaseModel {
     
     // Crear usuario con contraseña encriptada
     public function createUser($data) {
-        if (isset($data['password'])) {
-            $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+        if (isset($data['pass'])) {
+            $data['password'] = password_hash($data['pass'], PASSWORD_DEFAULT);
         }
+
+        if (!isset($data['role'])) {
+            $data['role'] = "user";
+        }
+
+        $data["name"] = $data["apellido"].", ".$data["nombre"];
         return $this->create($data);
     }
     

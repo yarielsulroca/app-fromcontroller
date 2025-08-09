@@ -16,7 +16,7 @@ class ProductoController {
         $this->layout->setTitle('ComercioIT | Productos');
         $this->layout->setMetaDescription('Nuestros productos.');
         
-        $this->layout->render('productos', [
+        $this->layout->render('productos/productos', [
             'pageTitle' => 'Productos',
             'productos_ultimos' => $this->_productos_ultimos,
         ]);
@@ -38,7 +38,7 @@ class ProductoController {
         
         if(!empty($producto))
         {
-            $this->layout->render('producto', [
+            $this->layout->render('productos/producto', [
                 'pageTitle' => 'Producto',
                 "producto" => $producto
                 
