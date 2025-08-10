@@ -19,13 +19,13 @@
             <div class="col-lg-6">
                 <h2 class="display-6 fw-bold mb-4">Nuestra Historia</h2>
                 <p class="lead text-muted mb-4">
-                    Fundada en <?php echo $companyInfo['founded']; ?>, <?php echo $companyInfo['name']; ?>
+                    Fundada en <?php echo $companyInfo['founded']; ?>, <?php echo $companyInfo['name']; ?> 
                     ha crecido de ser una pequeña startup a una empresa líder en soluciones tecnológicas.
                 </p>
                 <p class="mb-4">
-                    Desde nuestros inicios, nos hemos comprometido a proporcionar soluciones innovadoras
-                    que ayuden a nuestros clientes a alcanzar sus objetivos de negocio. Con más de
-                    <?php echo $companyInfo['employees']; ?> empleados y <?php echo $companyInfo['clients']; ?>
+                    Desde nuestros inicios, nos hemos comprometido a proporcionar soluciones innovadoras 
+                    que ayuden a nuestros clientes a alcanzar sus objetivos de negocio. Con más de 
+                    <?php echo $companyInfo['employees']; ?> empleados y <?php echo $companyInfo['clients']; ?> 
                     clientes satisfechos, continuamos expandiendo nuestro impacto en la industria tecnológica.
                 </p>
             </div>
@@ -104,19 +104,19 @@
                 <p class="lead text-muted">Los principios que guían nuestro trabajo y relaciones</p>
             </div>
         </div>
-
+        
         <div class="row g-4">
             <?php foreach ($values as $index => $value): ?>
-                <div class="col-md-4">
-                    <div class="text-center p-4">
-                        <div class="mb-3">
-                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-                                <span class="fw-bold"><?php echo $index + 1; ?></span>
-                            </div>
+            <div class="col-md-4">
+                <div class="text-center p-4">
+                    <div class="mb-3">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <span class="fw-bold"><?php echo $index + 1; ?></span>
                         </div>
-                        <h5 class="fw-bold"><?php echo $value; ?></h5>
                     </div>
+                    <h5 class="fw-bold"><?php echo $value; ?></h5>
                 </div>
+            </div>
             <?php endforeach; ?>
         </div>
     </div>
@@ -135,4 +135,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> 
