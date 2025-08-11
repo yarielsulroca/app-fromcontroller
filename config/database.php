@@ -1,6 +1,6 @@
-<?
-//Config general de la base de datos
-return[
+<?php
+//configuracion de la base de datos
+return [
     'host' => 'localhost',
     'database' => 'cursoit',
     'username' => 'root',
@@ -10,7 +10,8 @@ return[
     'prefix' => '',
     'options' => [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        PDO::ATTR_EMULATE_PREPARES => false,
     ]
-]
+];
 ?>
