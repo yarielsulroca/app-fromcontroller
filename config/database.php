@@ -1,10 +1,10 @@
 <?php
 //configuracion de la base de datos
 return [
-    'host' => 'localhost',
-    'database' => 'cursoit',
+    'host' => '127.0.0.1',
+    'database' => 'extructura_capas_it',
     'username' => 'root',
-    'password' => '',
+    'password' => 'root',
     'charset' => 'utf8mb4',
     'collation' => 'utf8mb4_unicode_ci',
     'prefix' => '',

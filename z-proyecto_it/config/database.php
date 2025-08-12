@@ -1,10 +1,10 @@
 <?php
 //configuracion de la base de datos
 return [
-    'host' => 'localhost',
+    'host' => '127.0.0.1',
     'database' => 'proyectoIT',
     'username' => 'root',
-    'password' => '',
+    'password' => 'root',
     'charset' => 'utf8mb4',
     'collation' => 'utf8mb4_unicode_ci',
     'prefix' => '',
